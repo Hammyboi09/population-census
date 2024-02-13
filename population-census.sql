@@ -1,0 +1,4 @@
+SELECT SUM(CITY.Population) AS Total_Population_Asia
+FROM CITY
+JOIN COUNTRY ON CITY.CountryCode = COUNTRY.Code
+WHERE COUNTRY.CONTINENT = 'Asia';
